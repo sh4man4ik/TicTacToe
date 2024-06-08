@@ -80,27 +80,7 @@ function controll() {
         document.getElementById("win").textContent = "THE CROSSES WON!";
 
         document.getElementById("playAgain").style.display = "block";
-    } 
-    //Draw
-    else if (
-        (array[0] == "x" || array[0] == "o") &&
-        (array[1] == "x" || array[1] == "o") &&
-        (array[2] == "x" || array[2] == "o") &&
-        (array[3] == "x" || array[3] == "o") &&
-        (array[4] == "x" || array[4] == "o") &&
-        (array[5] == "x" || array[5] == "o") &&
-        (array[6] == "x" || array[6] == "o") &&
-        (array[7] == "x" || array[7] == "o") &&
-        (array[8] == "x" || array[8] == "o")
-    ) {
-        walkIsTrue = false;
-        document.getElementById("win").style.display = "block";
-        document.getElementById("win").textContent = "DRAW!";
-
-        document.getElementById("playAgain").style.display = "block";
-    }
-    //Win o
-    else if (
+    } else if ( //Win o
         (array[0] == "o" && array[3] == "o" && array[6] == "o") ||
         (array[1] == "o" && array[4] == "o" && array[7] == "o") ||
         (array[2] == "o" && array[5] == "o" && array[8] == "o") ||
@@ -119,6 +99,22 @@ function controll() {
         walkIsTrue = false;
         document.getElementById("win").style.display = "block";
         document.getElementById("win").textContent = "THE ZEROES WON!";
+
+        document.getElementById("playAgain").style.display = "block";
+    } else if ( //Draw
+        (array[0] == "x" || array[0] == "o") &&
+        (array[1] == "x" || array[1] == "o") &&
+        (array[2] == "x" || array[2] == "o") &&
+        (array[3] == "x" || array[3] == "o") &&
+        (array[4] == "x" || array[4] == "o") &&
+        (array[5] == "x" || array[5] == "o") &&
+        (array[6] == "x" || array[6] == "o") &&
+        (array[7] == "x" || array[7] == "o") &&
+        (array[8] == "x" || array[8] == "o")
+    ) {
+        walkIsTrue = false;
+        document.getElementById("win").style.display = "block";
+        document.getElementById("win").textContent = "DRAW!";
 
         document.getElementById("playAgain").style.display = "block";
     }
