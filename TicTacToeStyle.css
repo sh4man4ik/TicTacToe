@@ -1,0 +1,134 @@
+body {
+    background-color: rgb(255, 255, 255);
+
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#title {
+    text-align: center;
+}
+
+#imgField {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 300px;
+    height: auto;
+}
+
+.blocks {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+}
+
+#field {
+    width: 308px;
+    height: 308px;
+    background: #000000;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gameContainer {
+    text-align: center;
+    font-size: 56px;
+    line-height: 100px;
+    margin-bottom: 20px;
+}
+
+#container {
+    position: relative;
+    margin-left: 50%;
+}
+
+#one {
+    margin-top: -309px;
+    margin-left: -155px;
+}
+#two {
+    margin-left: -155px;
+}
+#three {
+    margin-left: -155px;
+}
+
+#four {
+    margin-top: -315px;
+    margin-left: -50px;
+}
+#five {
+    margin-left: -50px;
+}
+#six {
+    margin-left: -50px;
+}
+
+#seven {
+    margin-top: -315px;
+    margin-left: 55px; 
+}
+#eight {
+    margin-left: 55px; 
+}
+#nine {
+    margin-left: 55px; 
+}
+
+#whoWalk {
+    position: relative;
+    top: 40px;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    margin-bottom: 50px;
+}
+
+#win {
+    position: relative;
+    top: 15px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.wins {
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-size: 24px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 150px;
+}
+
+#playAgain {
+    margin-top: 60px;
+    width: 100px;
+    height: auto;
+
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 20px;
+
+    transition: all 0.2s ease;
+}
+
+#playAgain:hover {
+    transform: scale(1.02, 1.02);
+}
+#playAgain:active {
+    transform: scale(1.02, 1.02);
+}
